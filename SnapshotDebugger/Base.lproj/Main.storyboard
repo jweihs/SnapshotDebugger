@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SnapshotDebugger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSM-iX-0Ey">
+                                <rect key="frame" x="0.0" y="636" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTg-gL-gTF">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="QoM-SP-TGm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Take Snapshots">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takeSnapshotButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQp-bb-MG9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI5-mU-DFI">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Reload WebView">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="reloadWebViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LTs-aq-p1t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hTg-gL-gTF" firstAttribute="top" secondItem="uSM-iX-0Ey" secondAttribute="top" id="0IF-4i-XTZ"/>
+                                    <constraint firstItem="RI5-mU-DFI" firstAttribute="leading" secondItem="hTg-gL-gTF" secondAttribute="trailing" id="9ly-UW-vP7"/>
+                                    <constraint firstAttribute="bottom" secondItem="RI5-mU-DFI" secondAttribute="bottom" id="NdS-19-yhz"/>
+                                    <constraint firstAttribute="trailing" secondItem="RI5-mU-DFI" secondAttribute="trailing" id="NnS-Ju-ZPQ"/>
+                                    <constraint firstItem="RI5-mU-DFI" firstAttribute="width" secondItem="hTg-gL-gTF" secondAttribute="width" id="Pr7-Pi-heh"/>
+                                    <constraint firstItem="RI5-mU-DFI" firstAttribute="top" secondItem="uSM-iX-0Ey" secondAttribute="top" id="UsI-Pg-Q8H"/>
+                                    <constraint firstItem="hTg-gL-gTF" firstAttribute="leading" secondItem="uSM-iX-0Ey" secondAttribute="leading" id="af9-wG-ZFU"/>
+                                    <constraint firstAttribute="bottom" secondItem="hTg-gL-gTF" secondAttribute="bottom" id="drb-2h-3Nc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAK-9Q-bKf">
+                                <rect key="frame" x="20" y="198" width="374" height="360"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eAK-9Q-bKf" secondAttribute="height" multiplier="80:77" id="4bp-1F-2sT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eAK-9Q-bKf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="4cq-GY-poo"/>
+                            <constraint firstItem="uSM-iX-0Ey" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KUH-cd-EHd"/>
+                            <constraint firstItem="uSM-iX-0Ey" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eAK-9Q-bKf" secondAttribute="bottom" constant="50" id="TWS-gY-CgK"/>
+                            <constraint firstItem="eAK-9Q-bKf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="950" constant="20" id="VvB-yA-8YX"/>
+                            <constraint firstItem="eAK-9Q-bKf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gcJ-2C-cYV"/>
+                            <constraint firstItem="uSM-iX-0Ey" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lua-yr-0c0"/>
+                            <constraint firstItem="uSM-iX-0Ey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="umN-U2-qVY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="reloadWebViewButton" destination="RI5-mU-DFI" id="5sf-Nf-Qvo"/>
+                        <outlet property="takeSnapshotButton" destination="hTg-gL-gTF" id="xfA-gk-iSg"/>
+                        <outlet property="webViewContainerView" destination="eAK-9Q-bKf" id="9Nq-u9-No8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
