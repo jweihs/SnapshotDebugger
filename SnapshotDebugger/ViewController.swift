@@ -61,8 +61,8 @@ class ViewController: UIViewController {
         self.setupWebView()
     }
     
-    fileprivate func takeSnapshots(_ count: Int = 100) {
-        for i in 0..<100 {
+    fileprivate func takeSnapshots(_ count: Int = 200) {
+        for i in 0..<count {
             delay(TimeInterval(i)  * 0.01) {
                 self.view.snapshotView(afterScreenUpdates: true)
                 self.snapshotCount += 1
